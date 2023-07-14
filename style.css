@@ -1,0 +1,382 @@
+/* Nav Start */
+*{
+    margin:0;
+    padding:0;
+}
+
+#navigation{
+    background-image: linear-gradient(dodgerblue, rgb(8, 88, 168));
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation > ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+#navigation > ul > li{
+    list-style: none;
+    margin: 0px 5px;
+    padding: 15px 0px;
+}
+
+#navigation > ul > li > a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+.logo >h2 {
+    color: white;
+    margin-left: 50px;
+}
+
+.logofirstletter{
+    color:yellow;
+    font-size: 35px;
+}
+
+#navigation > ul > li:hover > a{
+    background-color: rgb(5, 91, 176);
+}
+
+/* Nav End */
+
+
+/* Dropdown menu start */
+
+.Dropdown {
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 15px;
+    width: 190px;
+    position: absolute;
+    box-shadow:10px 10px 8px black ;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.Dropdown > li{
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.Dropdown  >li:hover{
+    background-color:  rgb(5, 91, 176);
+}
+
+.Dropdown > li:first-child{
+    border-top: 1px solid white;
+}
+.Dropdown > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+#navigation >ul > li:hover > .Dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* Hero area start here */
+
+
+#main-header{
+   background-image: url('image/nature.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 90vh;
+}
+.header-container{
+    padding-top: 100px;
+}
+
+.header-container h1{
+    width: 500px;
+    margin:20px auto;
+    background-color: rgba(9, 90, 170, 0.511);
+    font-size: 50px;
+    color:white;
+    padding: 10px;px 0px;
+    border-radius: 15px;
+}
+
+.header-container > button{
+    font-size: 22px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(3, 67, 132, 0.798);
+    color:white;
+    border-radius: 30px 10px 30px 10px;
+    border:4px solid green;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.header-container > button:hover{
+    background-color: rgba(3, 47, 91, 0.182);
+}
+
+.header-container > h4{
+    font-size: 25px;
+    color:white;
+}
+
+/* first Section Start Here */
+
+.Aaraf{
+    background-color: lightgray;
+}
+
+
+#firstSection{
+    width: 1000px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.facebook-pexel{
+    width: 300px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.facebook-pexel > h2{
+    margin:15px 0;
+}
+
+.facebook-pexel:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+
+
+
+/* Second Section code Start Here */
+
+.Second-Section{
+    background-color: #FAFAFA;
+}
+
+.services-area-title{
+    text-align: center;
+    padding:40px 0 60px 0;
+}
+
+.services-area-title > h2{
+    font-size: 40px;
+}
+
+.parentDiv{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+    padding-bottom: 60px;
+}
+
+.parent-Div-area{
+    width: 1000px;
+    margin:auto;
+}
+
+.Visual-Composer{
+    background-color: lightblue;
+    text-align: center;
+    padding:30px 0;
+}
+
+.Visual-Composer:hover{
+    background-color:rgb(10, 129, 169);
+    transition: 0.5s;
+}
+
+
+.Visual-Composer > h3{
+    margin: 15px o;
+}
+
+/* testomonial section start */
+
+#teto-sec{
+    background-color: bisque;
+}
+
+
+.testo-container{
+    width:1000px;
+    margin:auto;
+    padding-bottom: 100px;
+}
+
+.Testomonial-title{
+    text-align: center;
+    padding:20px;
+}
+
+.Testomonial-title h2{
+    font-size: 35px;
+}
+
+.Testomonial-title h4{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+
+.testo-SingleCard-Parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:25px;
+}
+
+.testo-singleCard{
+    display:flex;
+    align-items: center;
+    color:black;
+    background-color:white;
+    padding:20px;
+
+}
+
+.testo-image-div{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testo-image-div img{
+    max-width: 100%;
+    border-radius: 50%;
+    border:1px solid red;
+}
+
+.testo-span{
+    font-size: 24px;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+/* blog section code start */
+
+.blog-container{
+    width: 1000px;
+    margin:auto;
+}
+.blog-item-parent{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:25px;
+    margin-bottom: 100px;
+}
+
+.blog-image{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+.blog-image-div{
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-icons-text{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    color:white;
+    font-size:24px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.blog-image-div:hover .blog-icons-text{
+    opacity:1;
+    background-color: rgba(0, 0, 0, 0.511);
+}
+
+.blog-image-div:hover .blog-image{
+    transform: scale(1.6);
+}
+
+/* contact section code start */
+
+.contact-container{
+    width: 1000px;
+    margin:auto;
+    padding-bottom: 100px;
+}
+
+.form-parent{
+    background-color: #EAECF0;
+    display:flex;
+}
+
+.fullname-email-parent{
+    display:flex;
+}
+
+.form-tag{
+    width:600px;
+}
+
+.fullname-email-parent input{
+    width:200px;
+    height:40px;
+    margin-left: 20px;
+    border:none;
+    padding:0 10px;
+}
+
+.fullname-email-parent h4{
+    margin:40px 20px 10px 20px;
+}
+
+.subject-box input{
+    width: 85%;
+    height: 40px;
+    margin-left: 20px;
+    border:none;
+    padding:0 10px;
+}
+
+.subject-box h4{
+    margin:20px 20px 10px 20px; 
+}
+
+.message textarea{
+    width: 85%;
+    height: 100px;
+    margin-left: 20px;
+    border:none;
+    padding:0 10px;
+}
+
+.message h4{
+    margin:20px 20px 10px 20px; 
+}
+
+.message input{
+    background-color: #3252AF;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius: 20px 10px 20px 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
